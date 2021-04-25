@@ -1,0 +1,19 @@
+.product {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.product_wrapper:hover {
+  background-color: rgb(252, 248, 248);
+}
+.product_image {
+  width: 100px;
+  margin: 10px 30% 10px 5px;
+}
+.product_image img {
+  width: 100%;
+}
+.product_info_name h2 {
+  font-weight: normal;
+  font-size: 20px;
+}

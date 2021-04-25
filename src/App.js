@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Container from "@material-ui/core/Container";
+import Header from "./components/Header/Header";
+import FindProducts from "./pages/FindProducts/FindProducts";
+import FoodDatabase from "./pages/FoodDatabase/FoodDatabase";
+import { Route } from "react-router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fixed>
+      <div className="App">
+        <Header />
+        <div className="App-content">
+          <Route exact path="/" component={FindProducts} />
+          <Route path="/food_database" component={FoodDatabase} />
+        </div>
+      </div>
+    </Container>
   );
 }
 
