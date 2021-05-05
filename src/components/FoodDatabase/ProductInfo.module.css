@@ -1,19 +1,63 @@
+.product_wrapper {
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: rgb(133, 152, 111);
+  transition: all 0.4s ease;
+}
+
+.product_wrapper:hover {
+  transform: scale(1.01);
+}
+
 .product {
   display: flex;
   cursor: pointer;
   align-items: center;
 }
-.product_wrapper:hover {
-  background-color: rgb(252, 248, 248);
-}
+
 .product_image {
   width: 100px;
-  margin: 10px 30% 10px 5px;
+  margin-right: 40px;
 }
 .product_image img {
+  border-radius: 20px;
   width: 100%;
 }
+
+/* Текстовая информация о товаре */
+
+.product_info {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.product_info_nutrients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 200;
+  font-size: 14px;
+}
+.product_info_nutrients_element {
+  margin-right: 10px;
+}
+
 .product_info_name h2 {
+  letter-spacing: 1px;
+  color: white;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 19px;
+}
+
+/* Дополнительные опции карточки (добавить продукт и выбрать вес)  */
+.product_options {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px 0;
+}
+.product_options button {
+  margin-left: 20px;
 }

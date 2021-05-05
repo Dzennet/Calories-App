@@ -1,0 +1,23 @@
+.food_diary_tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Блок подсчета итогов питания */
+
+.food_diary_total {
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.food_diary_total_nutrients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.food_diary_total_nutrient {
+  margin-left: 5px;
+}

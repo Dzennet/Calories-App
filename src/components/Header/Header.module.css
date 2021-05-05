@@ -1,26 +1,30 @@
+header {
+  color: white;
+  font-weight: 500;
+  background-color: #acd263;
+  padding: 5px 5%;
+}
 
 /* Стили для логотипа */
-.logo {
+.header_logo {
   display: flex;
   text-align: start;
   align-items: center;
 }
-.logo a {
-  background: url(../../common/img/salad.png) no-repeat;
+.header_logo a {
+  background: url(../../common/img/icon.png) no-repeat;
   display: block;
   background-size: contain;
-  width: 80px;
-  height: 80px;
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
 }
-.logo a:hover {
-  background: url(../../common/img/salad.gif) no-repeat;
-  background-size: contain;
-}
 
-.logo_description{
-    letter-spacing: 2px;
+/* Стили для названия приложения */
+
+.header_logo_description {
+  letter-spacing: 2px;
 }
-.logo_description_name{
-    text-transform: uppercase;
+.header_logo_description_name {
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
 }

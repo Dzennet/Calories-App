@@ -1,0 +1,48 @@
+.food_table {
+  margin-bottom: 15px;
+  background-color: rgba(133, 152, 111, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.food_table_title {
+  color: white;
+  letter-spacing: 5px;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+  .food_table {
+    width: 90%;
+  }
+}
+/* Стили для функции "Добавить элемент" */
+
+.food_table_add {
+  background-color: #acd263;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.food_table_add img {
+  width: 15px;
+}
+.food_table_add a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+}
+
+/* Дополнительные опции для продукта (удаление) */
+
+.product_delete {
+  width: 20px;
+  cursor: pointer;
+  margin-right: -20px;
+}

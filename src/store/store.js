@@ -1,17 +1,13 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-import FindProductsReducer from "./FindProducts/FindProductsReducer";
 import thunk from "redux-thunk";
-import BreakfastReducer from "./Breakfast/BreakfastReducer";
-import DinnerReducer from "./Dinner/DinnerReducer";
-import LunchReducer from "./Lunch/LunchReducer";
-import MealReducer from "./Meal/MealReducer";
+import MainReducer from "./Main/MainReducer";
+import FoodDatabaseReducer from "./FoodDatabase/FoodDatabaseReducer";
+import FoodDiaryReducer from "./FoodDiary/FoodDiaryReducer";
 
 const reducers = combineReducers({
-  findProductsStore: FindProductsReducer,
-  breakfast: BreakfastReducer,
-  dinner: DinnerReducer,
-  lunch: LunchReducer,
-  meal: MealReducer,
+  main: MainReducer,
+  foodDatabase: FoodDatabaseReducer,
+  foodDiary: FoodDiaryReducer,
 });
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

@@ -5,14 +5,12 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header className={c.header}>
-      <div className={c.logo}>
-        <div className={c.logo_image}>
+      <div className={c.header_logo}>
+        <div className={c.header_logo_image}>
           <NavLink to="/"> </NavLink>
         </div>
-        <div className={c.logo_description}>
-          <div className={c.logo_description_name}>calories</div>
-          <hr />
-          <div className={c.logo_description_tagline}>Ешь и худей!</div>
+        <div className={c.header_logo_description}>
+          <div className={c.header_logo_description_name}>Calories</div>
         </div>
       </div>
     </header>

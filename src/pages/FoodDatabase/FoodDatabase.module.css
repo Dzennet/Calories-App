@@ -1,0 +1,50 @@
+.food_database {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Фиксированная кнопка возвращения к Дневнику Питания */
+
+.food_database_back {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  border-radius: 25px;
+  padding: 8px;
+  z-index: 5;
+  cursor: pointer;
+  color: white;
+  background-color: #424242;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  font-size: 0.875rem;
+}
+
+/* Блок поиска товаров */
+
+.food_database_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food_database_search_btn {
+  width: 30px;
+  height: 30px;
+  background: no-repeat center/80% url(../../common/img/loupe.png);
+  transform: rotate(-85deg);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Анимация загрузки */
+
+.food_database_products_load {
+  margin-top: 50px;
+  width: 100px;
+}
